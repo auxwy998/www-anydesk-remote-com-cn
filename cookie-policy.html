@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie政策 - AnyDesk远程控制</title>
+    <meta name="description" content="AnyDesk Cookie政策，了解AnyDesk如何使用Cookie和类似技术。">
+    <meta property="og:title" content="Cookie政策 - AnyDesk远程控制">
+    <meta property="og:description" content="AnyDesk Cookie政策，了解AnyDesk如何使用Cookie和类似技术。">
+    <meta property="og:image" content="logo.png">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .legal-page {
+            padding: 120px 0 80px;
+            min-height: 100vh;
+        }
+        .legal-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .legal-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .legal-title {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #fff 0%, var(--accent-orange) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .legal-subtitle {
+            font-size: 16px;
+            color: var(--text-muted);
+        }
+        .legal-content {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 48px;
+        }
+        .legal-section {
+            margin-bottom: 32px;
+        }
+        .legal-section:last-child {
+            margin-bottom: 0;
+        }
+        .legal-section h2 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--accent);
+        }
+        .legal-section h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+        }
+        .legal-section p {
+            font-size: 15px;
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+        .legal-section ul {
+            list-style: none;
+            margin: 16px 0;
+        }
+        .legal-section li {
+            font-size: 15px;
+            color: var(--text-muted);
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .legal-section li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+        .legal-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: var(--secondary);
+            border-radius: 12px;
+        }
+        .legal-nav a {
+            color: var(--text-muted);
+            font-size: 14px;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+        .legal-nav a:hover {
+            background: var(--card-bg);
+            color: white;
+        }
+        .legal-nav a.active {
+            background: var(--accent);
+            color: white;
+        }
+        .legal-footer {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+        .legal-footer a {
+            color: var(--accent);
+        }
+        .legal-footer a:hover {
+            text-decoration: underline;
+        }
+        .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .cookie-table th,
+        .cookie-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+            font-size: 14px;
+        }
+        .cookie-table th {
+            color: var(--accent);
+            font-weight: 600;
+        }
+        .cookie-table td {
+            color: var(--text-muted);
+        }
+        .cookie-type {
+            display: inline-block;
+            padding: 4px 10px;
+            background: var(--secondary);
+            border-radius: 4px;
+            font-size: 12px;
+            margin-left: 8px;
+        }
+        .cookie-type.essential {
+            background: rgba(229, 62, 62, 0.2);
+            color: var(--accent);
+        }
+        .cookie-type.performance {
+            background: rgba(246, 173, 85, 0.2);
+            color: var(--accent-orange);
+        }
+        .cookie-type.functional {
+            background: rgba(66, 153, 225, 0.2);
+            color: #4299e1;
+        }
+        .cookie-type.marketing {
+            background: rgba(72, 187, 120, 0.2);
+            color: #48bb78;
+        }
+        @media (max-width: 768px) {
+            .legal-title {
+                font-size: 32px;
+            }
+            .legal-content {
+                padding: 24px;
+            }
+            .cookie-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="AnyDesk" width="140" height="auto">
+            </a>
+            <nav class="nav">
+                <a href="index.html#features" class="nav-link">功能</a>
+                <a href="index.html#scenarios" class="nav-link">场景</a>
+                <a href="index.html#download" class="nav-link">下载</a>
+                <a href="index.html#faq" class="nav-link">FAQ</a>
+                <a href="index.html#reviews" class="nav-link">评价</a>
+            </nav>
+            <a href="https://anydesk.com/download" class="btn btn-primary header-cta" target="_blank">立即下载</a>
+        </div>
+    </header>
+
+    <main class="legal-page">
+        <div class="legal-container">
+            <div class="legal-header">
+                <h1 class="legal-title">Cookie政策</h1>
+                <p class="legal-subtitle">最后更新：2024年1月</p>
+            </div>
+            
+            <nav class="legal-nav">
+                <a href="privacy-policy.html">隐私政策</a>
+                <a href="user-agreement.html">用户协议</a>
+                <a href="cookie-policy.html" class="active">Cookie政策</a>
+            </nav>
+
+            <div class="legal-content">
+                <div class="legal-section">
+                    <h2>什么是Cookie</h2>
+                    <p>Cookie是存储在您设备上的小型文本文件。当您访问网站时，网站会向您的浏览器发送Cookie，这些Cookie随后会存储在您的设备上。Cookie帮助网站记住您的偏好和设置，使您的浏览体验更加便捷和高效。</p>
+                </div>
+
+                <div class="legal-section">
+                    <h2>我们使用的Cookie类型</h2>
+                    <p>AnyDesk使用以下类型的Cookie：</p>
+                    
+                    <table class="cookie-table">
+                        <thead>
+                            <tr>
+                                <th>Cookie名称</th>
+                                <th>类型</th>
+                                <th>用途</th>
+                                <th>有效期</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>session_id<span class="cookie-type essential">必要</span></td>
+                                <td>会话Cookie</td>
+                                <td>保持用户登录状态</td>
+                                <td>会话结束</td>
+                            </tr>
+                            <tr>
+                                <td>preferences<span class="cookie-type functional">功能</span></td>
+                                <td>持久Cookie</td>
+                                <td>记住用户设置和偏好</td>
+                                <td>1年</td>
+                            </tr>
+                            <tr>
+                                <td>analytics_id<span class="cookie-type performance">性能</span></td>
+                                <td>分析Cookie</td>
+                                <td>了解网站使用情况</td>
+                                <td>2年</td>
+                            </tr>
+                            <tr>
+                                <td>marketing_id<span class="cookie-type marketing">营销</span></td>
+                                <td>营销Cookie</td>
+                                <td>个性化广告投放</td>
+                                <td>90天</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="legal-section">
+                    <h2>Cookie分类说明</h2>
+                    
+                    <h3>必要Cookie <span class="cookie-type essential">必要</span></h3>
+                    <p>这些Cookie对于网站的基本功能至关重要，缺一不可。它们使您能够浏览网站并使用其核心功能，如访问安全区域。没有这些Cookie，服务将无法正常工作。</p>
+                    <p>示例用途：</p>
+                    <ul>
+                        <li>身份验证和安全</li>
+                        <li>负载均衡</li>
+                        <li>会话管理</li>
+                    </ul>
+                    
+                    <h3>功能Cookie <span class="cookie-type functional">功能</span></h3>
+                    <p>这些Cookie使网站能够记住您的选择（如语言偏好或地区）并提供增强的个性化功能。它们有助于记住您所做的更改，如文本大小、字体和页面的其他可自定义部分。</p>
+                    <p>示例用途：</p>
+                    <ul>
+                        <li>记住语言设置</li>
+                        <li>记住主题偏好</li>
+                        <li>记住布局设置</li>
+                    </ul>
+                    
+                    <h3>性能Cookie <span class="cookie-type performance">性能</span></h3>
+                    <p>这些Cookie收集有关访问者如何使用网站的信息，例如哪些页面最常被访问，以及是否收到错误消息。这些Cookie不会收集识别访问者身份的信息，所有信息都是匿名的。</p>
+                    <p>示例用途：</p>
+                    <ul>
+                        <li>页面访问统计</li>
+                        <li>错误追踪</li>
+                        <li>性能监控</li>
+                    </ul>
+                    
+                    <h3>营销Cookie <span class="cookie-type marketing">营销</span></h3>
+                    <p>这些Cookie用于在整个网站上显示更相关的广告。它们还用于限制您看到广告的次数，并帮助衡量广告活动的有效性。</p>
+                    <p>示例用途：</p>
+                    <ul>
+                        <li>个性化推荐</li>
+                        <li>广告效果追踪</li>
+                        <li>再营销</li>
+                    </ul>
+                </div>
+
+                <div class="legal-section">
+                    <h2>第三方Cookie</h2>
+                    <p>某些Cookie由第三方服务提供商设置，包括：</p>
+                    <ul>
+                        <li><strong>Google Analytics</strong>：用于分析网站流量和使用情况</li>
+                        <li><strong>Hotjar</strong>：用于用户行为分析和反馈收集</li>
+                        <li><strong>社交媒体插件</strong>：用于分享功能和社会化登录</li>
+                    </ul>
+                    <p>这些第三方Cookie受各自第三方隐私政策的约束。我们建议您查看这些第三方的隐私政策以了解更多信息。</p>
+                </div>
+
+                <div class="legal-section">
+                    <h2>如何管理Cookie</h2>
+                    <p>您可以通过以下方式管理Cookie偏好：</p>
+                    
+                    <h3>浏览器设置</h3>
+                    <p>大多数浏览器允许您：</p>
+                    <ul>
+                        <li>查看所有已存储的Cookie</li>
+                        <li>删除所有或部分Cookie</li>
+                        <li>阻止所有Cookie</li>
+                        <li>在设置Cookie之前收到通知</li>
+                    </ul>
+                    <p>请注意，阻止必要Cookie可能会影响网站的功能。</p>
+                    
+                    <h3>浏览器退出链接</h3>
+                    <p>您可以通过以下链接了解更多关于如何管理Cookie的信息：</p>
+                    <ul>
+                        <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener">Google Chrome</a></li>
+                        <li><a href="https://support.mozilla.org/zh-CN/kb/cookies-information-websites-store-on-your-computer" target="_blank" rel="noopener">Mozilla Firefox</a></li>
+                        <li><a href="https://support.apple.com/zh-cn/guide/safari/sfri11471/mac" target="_blank" rel="noopener">Safari</a></li>
+                        <li><a href="https://support.microsoft.com/zh-cn/microsoft-edge/microsoft-edge中的cookies-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener">Microsoft Edge</a></li>
+                    </ul>
+                </div>
+
+                <div class="legal-section">
+                    <h2>Cookie保留期限</h2>
+                    <p>Cookie的保留期限取决于其类型：</p>
+                    <ul>
+                        <li><strong>会话Cookie</strong>：仅在您浏览网站期间存在，关闭浏览器后自动删除</li>
+                        <li><strong>持久Cookie</strong>：在您设置的有效期内保存，直到过期或您手动删除</li>
+                    </ul>
+                </div>
+
+                <div class="legal-section">
+                    <h2>本政策的更新</h2>
+                    <p>我们可能会不时更新本Cookie政策，以反映我们使用的Cookie的变化或出于其他运营、法律或监管原因。当我们更新政策时，我们会在此页面上发布更改，并更新"最后更新"日期。</p>
+                </div>
+
+                <div class="legal-section">
+                    <h2>联系我们</h2>
+                    <p>如果您对本Cookie政策有任何问题或疑虑，请联系我们：</p>
+                    <p>邮箱：privacy@anydesk.com<br>
+                    地址：AnyDesk Software GmbH, Friedrich-List-Straße 44, 70771 Leinfelden-Echterdingen, Germany</p>
+                </div>
+
+                <div class="legal-footer">
+                    <p><a href="index.html">← 返回首页</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="AnyDesk" class="footer-logo" width="120">
+                    <p class="footer-tagline">德国AnyDesk Software GmbH出品<br>值得信赖的远程控制解决方案</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">产品</h4>
+                        <a href="index.html#features" class="footer-link">功能特点</a>
+                        <a href="index.html#scenarios" class="footer-link">使用场景</a>
+                        <a href="https://anydesk.com/download" class="footer-link" target="_blank">下载中心</a>
+                        <a href="index.html#pricing" class="footer-link">版本价格</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">支持</h4>
+                        <a href="index.html#faq" class="footer-link">常见问题</a>
+                        <a href="https://anydesk.com/download" class="footer-link" target="_blank">知识库</a>
+                        <a href="https://anydesk.com/download" class="footer-link" target="_blank">联系客服</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">法律</h4>
+                        <a href="privacy-policy.html" class="footer-link">隐私政策</a>
+                        <a href="user-agreement.html" class="footer-link">用户协议</a>
+                        <a href="cookie-policy.html" class="footer-link">Cookie政策</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 AnyDesk Software GmbH. All rights reserved.</p>
+                <p class="footer-note">AnyDesk® is a registered trademark of AnyDesk Software GmbH, Germany.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

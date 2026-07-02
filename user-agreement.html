@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户协议 - AnyDesk远程控制</title>
+    <meta name="description" content="AnyDesk用户协议，了解使用AnyDesk软件和服务的条款与条件。">
+    <meta property="og:title" content="用户协议 - AnyDesk远程控制">
+    <meta property="og:description" content="AnyDesk用户协议，了解使用AnyDesk软件和服务的条款与条件。">
+    <meta property="og:image" content="logo.png">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .legal-page {
+            padding: 120px 0 80px;
+            min-height: 100vh;
+        }
+        .legal-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .legal-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .legal-title {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #fff 0%, var(--accent-orange) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .legal-subtitle {
+            font-size: 16px;
+            color: var(--text-muted);
+        }
+        .legal-content {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 48px;
+        }
+        .legal-section {
+            margin-bottom: 32px;
+        }
+        .legal-section:last-child {
+            margin-bottom: 0;
+        }
+        .legal-section h2 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--accent);
+        }
+        .legal-section h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+        }
+        .legal-section p {
+            font-size: 15px;
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+        .legal-section ul {
+            list-style: none;
+            margin: 16px 0;
+        }
+        .legal-section li {
+            font-size: 15px;
+            color: var(--text-muted);
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .legal-section li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+        .legal-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: var(--secondary);
+            border-radius: 12px;
+        }
+        .legal-nav a {
+            color: var(--text-muted);
+            font-size: 14px;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+        .legal-nav a:hover {
+            background: var(--card-bg);
+            color: white;
+        }
+        .legal-nav a.active {
+            background: var(--accent);
+            color: white;
+        }
+        .legal-footer {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+        .legal-footer a {
+            color: var(--accent);
+        }
+        .legal-footer a:hover {
+            text-decoration: underline;
+        }
+        .toc {
+            background: var(--secondary);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 32px;
+        }
+        .toc h3 {
+            margin-top: 0 !important;
+            color: white;
+        }
+        .toc ul {
+            margin: 12px 0 0 0;
+        }
+        .toc a {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+        .toc a:hover {
+            color: var(--accent);
+        }
+        @media (max-width: 768px) {
+            .legal-title {
+                font-size: 32px;
+            }
+            .legal-content {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="AnyDesk" width="140" height="auto">
+            </a>
+            <nav class="nav">
+                <a href="index.html#features" class="nav-link">功能</a>
+                <a href="index.html#scenarios" class="nav-link">场景</a>
+                <a href="index.html#download" class="nav-link">下载</a>
+                <a href="index.html#faq" class="nav-link">FAQ</a>
+                <a href="index.html#reviews" class="nav-link">评价</a>
+            </nav>
+            <a href="https://anydesk.com/download" class="btn btn-primary header-cta" target="_blank">立即下载</a>
+        </div>
+    </header>
+
+    <main class="legal-page">
+        <div class="legal-container">
+            <div class="legal-header">
+                <h1 class="legal-title">用户协议</h1>
+                <p class="legal-subtitle">最后更新：2024年1月</p>
+            </div>
+            
+            <nav class="legal-nav">
+                <a href="privacy-policy.html">隐私政策</a>
+                <a href="user-agreement.html" class="active">用户协议</a>
+                <a href="cookie-policy.html">Cookie政策</a>
+            </nav>
+
+            <div class="toc">
+                <h3>目录</h3>
+                <ul>
+                    <li><a href="#acceptance">1. 协议接受</a></li>
+                    <li><a href="#license">2. 软件许可</a></li>
+                    <li><a href="#account">3. 账户注册</a></li>
+                    <li><a href="#usage">4. 使用规范</a></li>
+                    <li><a href="#payment">5. 付款与计费</a></li>
+                    <li><a href="#ip">6. 知识产权</a></li>
+                    <li><a href="#warranty">7. 免责声明</a></li>
+                    <li><a href="#termination">8. 协议终止</a></li>
+                    <li><a href="#law">9. 适用法律</a></li>
+                </ul>
+            </div>
+
+            <div class="legal-content">
+                <div class="legal-section" id="acceptance">
+                    <h2>1. 协议接受</h2>
+                    <p>欢迎使用AnyDesk软件和服务。本用户协议（以下简称"协议"）规定了您与AnyDesk Software GmbH（以下简称"AnyDesk"、"我们"或"我们的"）之间关于使用AnyDesk远程控制软件及其相关服务的法律条款。</p>
+                    <p>通过下载、安装或使用AnyDesk软件，或通过任何方式访问我们的服务，您确认已阅读、理解并同意受本协议所有条款的约束。如果您不同意本协议的任何条款，请不要使用我们的软件和服务。</p>
+                </div>
+
+                <div class="legal-section" id="license">
+                    <h2>2. 软件许可</h2>
+                    <h3>2.1 许可授予</h3>
+                    <p>在您遵守本协议条款的前提下，AnyDesk授予您有限的、非排他性的、不可转让的许可，以在您的设备上安装和使用AnyDesk软件，用于远程控制和协作目的。</p>
+                    
+                    <h3>2.2 免费版本</h3>
+                    <p>免费版本仅供个人非商业用途。您不得将免费版本用于任何商业目的，包括但不限于：为他人提供远程服务、代表第三方进行工作、或作为商业活动的一部分。</p>
+                    
+                    <h3>2.3 付费版本</h3>
+                    <p>付费版本需要订阅。订阅期限、费用和功能在订阅时确定。订阅费用按月或按年计费，除非您取消订阅，否则将自动续期。</p>
+                    
+                    <h3>2.4 许可限制</h3>
+                    <p>您不得：</p>
+                    <ul>
+                        <li>复制、修改、分发、出售或出租软件</li>
+                        <li>对软件进行反向工程、反编译或反汇编</li>
+                        <li>绕过任何技术限制或保护措施</li>
+                        <li>将软件用于非法目的</li>
+                        <li>未经授权尝试访问其他用户的系统</li>
+                    </ul>
+                </div>
+
+                <div class="legal-section" id="account">
+                    <h2>3. 账户注册</h2>
+                    <p>某些功能需要注册账户。您同意：</p>
+                    <ul>
+                        <li>提供准确、完整和最新的信息</li>
+                        <li>维护并及时更新您的账户信息</li>
+                        <li>对您的账户安全负责，包括保护您的密码</li>
+                        <li>对您账户下发生的所有活动负责</li>
+                    </ul>
+                </div>
+
+                <div class="legal-section" id="usage">
+                    <h2>4. 使用规范</h2>
+                    <h3>4.1 合法使用</h3>
+                    <p>您同意仅将AnyDesk用于合法目的。禁止的用途包括但不限于：</p>
+                    <ul>
+                        <li>未经授权访问他人计算机系统</li>
+                        <li>侵犯他人隐私或知识产权</li>
+                        <li>传播恶意软件或有害内容</li>
+                        <li>进行任何违法活动</li>
+                        <li>骚扰、威胁或伤害他人</li>
+                    </ul>
+                    
+                    <h3>4.2 连接行为</h3>
+                    <p>在建立远程连接时：</p>
+                    <ul>
+                        <li>您必须获得被连接设备所有者的明确授权</li>
+                        <li>您只能访问您被授权访问的内容和资源</li>
+                        <li>您必须遵守被连接网络的使用政策</li>
+                    </ul>
+                    
+                    <h3>4.3 数据责任</h3>
+                    <p>您对通过AnyDesk传输的所有数据和内容负全部责任。您保证您拥有必要的权利和许可来传输这些数据。</p>
+                </div>
+
+                <div class="legal-section" id="payment">
+                    <h2>5. 付款与计费</h2>
+                    <h3>5.1 价格</h3>
+                    <p>所有价格以人民币计价，除非另有说明。AnyDesk保留随时更改价格的权利，但会在更改前30天通知您。</p>
+                    
+                    <h3>5.2 付款方式</h3>
+                    <p>支持的付款方式包括信用卡、借记卡和其他在我们平台上显示的方式。</p>
+                    
+                    <h3>5.3 自动续期</h3>
+                    <p>订阅将自动续期，除非您在当前订阅期结束前取消。您可以在账户设置中随时取消订阅。</p>
+                    
+                    <h3>5.4 退款政策</h3>
+                    <p>订阅开始后7天内，如您不满意服务，可申请全额退款。超过7天后，将按比例退还剩余未使用期限的费用。</p>
+                </div>
+
+                <div class="legal-section" id="ip">
+                    <h2>6. 知识产权</h2>
+                    <p>AnyDesk软件及其所有相关材料（包括但不限于代码、文档、商标、标识和设计）的知识产权归AnyDesk Software GmbH所有。</p>
+                    <p>本协议不授予您对AnyDesk知识产权的任何所有权权益。您不得移除或更改任何版权、商标或其他所有权声明。</p>
+                </div>
+
+                <div class="legal-section" id="warranty">
+                    <h2>7. 免责声明</h2>
+                    <h3>7.1 服务可用性</h3>
+                    <p>AnyDesk尽力确保服务的可用性和可靠性，但不保证服务始终无中断或无错误。</p>
+                    
+                    <h3>7.2 按"原样"提供</h3>
+                    <p>软件和服务按"原样"和"可用"的基础提供，不提供任何明示或暗示的保证，包括但不限于对适销性、特定用途适用性或不侵权的保证。</p>
+                    
+                    <h3>7.3 责任限制</h3>
+                    <p>在适用法律允许的最大范围内，AnyDesk不对任何间接、附带、特殊、后果性或惩罚性损害承担责任，包括但不限于利润损失、数据丢失或业务中断。</p>
+                </div>
+
+                <div class="legal-section" id="termination">
+                    <h2>8. 协议终止</h2>
+                    <p>您可以随时停止使用AnyDesk软件并删除安装来终止本协议。</p>
+                    <p>AnyDesk可以在以下情况下终止本协议：</p>
+                    <ul>
+                        <li>您违反本协议的条款</li>
+                        <li>法律要求终止</li>
+                        <li>我们停止提供服务</li>
+                    </ul>
+                    <p>终止后，您必须停止使用软件并删除所有副本。</p>
+                </div>
+
+                <div class="legal-section" id="law">
+                    <h2>9. 适用法律与争议解决</h2>
+                    <p>本协议受德国法律管辖。因本协议引起的任何争议，双方应首先通过友好协商解决。协商不成的，任何一方可向AnyDesk所在地有管辖权的法院提起诉讼。</p>
+                </div>
+
+                <div class="legal-section">
+                    <h2>联系我们</h2>
+                    <p>如对本用户协议有任何问题，请联系我们：</p>
+                    <p>邮箱：legal@anydesk.com<br>
+                    地址：AnyDesk Software GmbH, Friedrich-List-Straße 44, 70771 Leinfelden-Echterdingen, Germany</p>
+                </div>
+
+                <div class="legal-footer">
+                    <p><a href="index.html">← 返回首页</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="AnyDesk" class="footer-logo" width="120">
+                    <p class="footer-tagline">德国AnyDesk Software GmbH出品<br>值得信赖的远程控制解决方案</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">产品</h4>
+                        <a href="index.html#features" class="footer-link">功能特点</a>
+                        <a href="index.html#scenarios" class="footer-link">使用场景</a>
+                        <a href="https://anydesk.com/download" class="footer-link" target="_blank">下载中心</a>
+                        <a href="index.html#pricing" class="footer-link">版本价格</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">支持</h4>
+                        <a href="index.html#faq" class="footer-link">常见问题</a>
+                        <a href="https://anydesk.com/download" class="footer-link" target="_blank">知识库</a>
+                        <a href="https://anydesk.com/download" class="footer-link" target="_blank">联系客服</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">法律</h4>
+                        <a href="privacy-policy.html" class="footer-link">隐私政策</a>
+                        <a href="user-agreement.html" class="footer-link">用户协议</a>
+                        <a href="cookie-policy.html" class="footer-link">Cookie政策</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 AnyDesk Software GmbH. All rights reserved.</p>
+                <p class="footer-note">AnyDesk® is a registered trademark of AnyDesk Software GmbH, Germany.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
